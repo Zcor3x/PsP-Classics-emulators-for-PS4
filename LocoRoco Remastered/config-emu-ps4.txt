@@ -1,0 +1,70 @@
+; Windows configuration file for PSPHD
+
+; Game Image
+--image="data/USER_L0.IMG"
+
+; Redirect host0: to a another directory (uncomment to enable).
+; By default it's mapped to the working directory where the executable starts
+;--host="D:\Sony\PSPHD"
+
+; To dump the original video in PMF format, uncomment the --dumpvideos line
+; For example, with the current setting, it will save them in a "D:\Sony\PSPHD\videos" directory (make sure the directory exists)
+;--dumpvideos="host0:videos"
+
+; To dump the original audio in Atrac3 format, uncomment the --dumpaudio line
+; For example, with the current setting, it will save them in a "D:\Sony\PSPHD\audio" directory (make sure the directory exists)
+;--dumpaudio="host0:audio"
+
+; To save the in-game textures as the game runs, uncomment the --texsave line
+; For example, with the current setting, it will save them in a "D:\Sony\PSPHD\texdump" directory (make sure the directory exists)
+;--texsave="host0:texdump"
+;--texmissingsave="host0:texdump"
+
+
+; To replace specific textures as the game runs, uncomment the --texreplace line
+; For example, with the current setting, it will load them from the "D:\Sony\PSPHD\texreplace" directory
+; If the --scale setting is set to 4 or 8, the program will also look for replacement textures on '4x' or '8x' directories within this directory
+--texreplace="host0:texreplace"
+
+; This forces alpha blending to on for replaced textures. (uncomment to enable)
+; With this we can freely make use of a normal alpha channel on replacement textures
+--replacementalpha=true
+
+; This enables bilinear filtering on replaced textures. (uncomment to enable)
+--replacementfilter=true
+
+; Enable switching between original and replacement textures at runtime using the L3 button on a DS4 or the 'T' key on Windows
+--texswitch=true
+
+; Antialiasing mode. SSAA4x looks best, MSAA4x only smooths edges.
+; Choices: off, SSAA4x, MSAA4x
+; Supersampling is not very important for this game, but MSAA makes a difference.
+--antialias=SSAA4x
+
+; Turns on the auto-resampler. Assumes textures in texreplace are at 8x resolution and resamples them at load
+--autoresampler=true
+
+; LocoRoco texture cache mode.
+--texcachemode=drawboundsloco
+
+; Decompress replacement textures on demand
+;    launch: Fully load and decompress all textures on launch.
+;    ondemand: Load on launch, decompress on first use. This should enable using enourmous amounts of textures on NEO, but does stutter a bit.
+--texloadmode=ondemand_lz4
+
+; LocoRoco mesh tesselation mode
+--locorocomeshsmooth=true
+;--locorocomeshsmooth=false
+
+;Support for multiple savgames
+--multisaves=true
+
+; X/O button mode. "oenter" sets Circle as enter, "xenter" sets Cross as enter. If not present/enabled, it's selected by the system language (Asian
+; languages default to oenter, everything else "xenter"). Notice this only works when the game queries the PSP OS for the button configuration.
+--xobuttonmode="xenter"
+
+; Adjust overall volume level (does not include pad speaker volume). Range from 0.0 (min) to 1.0 (max)
+--volume="0.25"
+
+; Use 5 cores to load textures at boot
+--texloadcores=5
