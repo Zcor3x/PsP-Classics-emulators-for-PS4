@@ -1,0 +1,56 @@
+; PS4 configuration file for PSPHD
+
+; Game Image
+--image="data/USER_L0.IMG"
+
+; Redirect host0: to a specific directory (uncomment to enable).
+; By default it's mapped to either "/hostapp/" if available, or "/app0/" if "/hostapp/" is not available.
+;--host="/hostapp/"
+
+; To dump the original video in PMF format, uncomment the --dumpvideos line
+; For example, with the current setting, it will save them in a "videos" directory inside the File Serving Directory
+;--dumpvideos="host0:videos"
+
+; To dump the original audio in Atrac3 format, uncomment the --dumpaudio line
+; For example, with the current setting, it will save them in a "audio" directory inside the File Serving Directory
+;--dumpaudio="host0:audio"
+
+; To replace atrac3 audio samples, use this.
+--samplereplace="host0:samplereplace"
+
+; To save the in-game textures as the game runs, uncomment the --texsave line
+; For example, with the current setting, it will save them in a "texdump" directory inside the File Serving Directory
+;--texsave="host0:texdump"
+;--texmissingsave="host0:texdump"
+
+; To replace specific textures as the game runs, uncomment the --texreplace line
+; For example, with the current setting, it will load them from the "texreplace" directory inside the File Serving Directory
+--texreplace="host0:texreplace"
+
+; This forces alpha blending to on for replaced textures. (uncomment to enable)
+; With this we can freely make use of a normal alpha channel on replacement textures
+--replacementalpha=true
+
+; This enables bilinear filtering on replaced textures. (uncomment to enable)
+--replacementfilter=true
+
+; Antialiasing mode. SSAA4x looks best, MSAA4x only smooths edges.
+; Choices: off, SSAA4x, MSAA4x
+--antialias=SSAA4x
+
+; Enable switching between original and replacement textures at runtime using the L3 button on a DS4 or the 'T' key on Windows
+;--texswitch=true
+
+; Turns on the auto-resampler. Assumes textures in texreplace are at 8x resolution and resamples them at load
+--autoresampler=true
+
+; Parappa Alpha Hack
+--parappaalphahack=true
+
+; Adjust overall volume level (does not include pad speaker volume). Range from 0.0 (min) to 1.0 (max)
+--volume="0.25"
+
+; Special thanks to Matsuura, Rodney, Allan and all the awesome people at Japan Studio! Also HUUUUGE thanks to Ernesto, Adam, Henrick, Taku, Tim, Nick, Mayene, Tyler, Dave Thach and Scott Rohde whose support made this project of love possible! PaRappa-4-Ever!!!!!
+
+; If you're reading this message, congratulations! you win !!!
+; we love you so much. you’ve made hacking great again.
