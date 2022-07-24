@@ -1,0 +1,98 @@
+--title-id
+--autoresampler
+--texrecent
+--texloadcores
+--umddelay
+--dumpaudio parameter must include a device name
+			E:\Em\PeoplesPackageParty\masticore\PSPHD\src\HLE\HLEsceAtrac3plus.cpp(361): 
+			FAILED REQUIRE(filesystem != nullptr)
+			Invalid device %s specified for --dumpaudio!
+--osk
+
+--locale=enUS,other langaueges...
+--xobuttonmode=oenter,ocancel
+--dumpeboot=eboot.bin,boot.bin, (other?specifie executable name)
+--boot=disc0:/PSP_GAME/SYSDIR/EBOOT.BIN
+--texsave
+--texmissingsave
+--dumpvideos
+--dumpaudio
+--hid
+--players
+--agerestrict
+--samplesave
+--texreplace
+--fontsave
+--fontreplace
+--samplereplace
+--replacementalpha
+--parappaalphahack
+--locorocomeshsmooth
+--locorocomeshsmoothnonindexed
+--replacementfilter
+--gputhread
+--depthscalehack
+--forcenobilinear
+--smoothlevel
+--anisolevel
+--antialias=msaa4x,ssaa4x
+--texcachemode=drawbounds,drawboundsloco,patchworkheroes,locoroco2,rondo
+--present=vblankstart,setframebuf,drawsync
+--texclutmode=filter,full
+--texloadmode=launch,ondemand_lz4
+--parappajapanesefonthack
+--parappareplacecolor
+--godofwarhack
+--vramcopyback
+--volume
+		Adjusting volume level to %d%%
+--msxxadhoc
+--streamingogg
+--state-save-memslots
+umd0
+umd1
+--image
+		Could not open image %s
+		> review settings for --image, --gamedata-dir, --vault-dir, and --title-dir to troubleshoot.
+		> (these will have been printed toward the top of the console log)
+		umd0/disc0 is not mounted, no image specified.
+		> umd can be mounted via --image=/path/to/MY_UMD0.img
+--vms
+		create_directory(%s) failed. target dir may be unmoounted or read-only.
+--vms
+create_directory(%s) failed. target dir may be unmoounted or read-only.
+ms0
+addon
+--addon=ao0,ao0 is not mounted, not found: %s
+--host=host0,flash0
+--texswitch=original,replacement
+--loglevel=none,all,warn,info,error,debug,trace
+--securesaves
+--savedatamulti-size-game
+--savedatamulti-size-user
+--cwd-dir
+--vault-dir
+--gamedata-dir
+--title-dir
+--config-local-dir
+--has-shown-start-select-help
+--clamp-line-thickness-max
+--clamp-line-thickness-min
+--ctlanalog
+--sim-analog-pad
+--snapshot-dir
+--assets-dir
+--savedata-mode
+--ps4-trophies=0,1
+--trophies=0,1
+=========================================================================================================
+This command is used in the "revision.conf" file, so it may not work in the other configuration files
+--git-rev-gamedata
+=========================================================================================================
+These commands are used in the "package.conf" file, so it may not work in the other configuration files
+package-%s.conf
+--region-dir
+--app-dir
+--app-artifacts-dir
+--title-artifacts-dir
+=========================================================================================================
