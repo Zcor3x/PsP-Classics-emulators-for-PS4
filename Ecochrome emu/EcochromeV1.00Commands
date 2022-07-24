@@ -49,9 +49,7 @@
 --msxxadhoc
 --streamingogg
 --state-save-memslots
-umd0
-umd1
---image
+--image=umd0,umd1
 		Could not open image %s
 		> review settings for --image, --gamedata-dir, --vault-dir, and --title-dir to troubleshoot.
 		> (these will have been printed toward the top of the console log)
