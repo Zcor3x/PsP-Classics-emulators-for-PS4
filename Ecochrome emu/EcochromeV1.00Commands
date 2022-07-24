@@ -26,9 +26,9 @@
 --fontreplace
 --samplereplace
 --replacementalpha
---parappaalphahack
---locorocomeshsmooth
---locorocomeshsmoothnonindexed
+--parappaalphahack=1
+--locorocomeshsmooth=1
+--locorocomeshsmoothnonindexed=1
 --replacementfilter
 --gputhread
 --depthscalehack
@@ -40,9 +40,9 @@
 --present=vblankstart,setframebuf,drawsync
 --texclutmode=filter,full
 --texloadmode=launch,ondemand_lz4
---parappajapanesefonthack
---parappareplacecolor
---godofwarhack
+--parappajapanesefonthack=1
+--parappareplacecolor=1
+--godofwarhack=1
 --vramcopyback
 --volume
 		Adjusting volume level to %d%%
