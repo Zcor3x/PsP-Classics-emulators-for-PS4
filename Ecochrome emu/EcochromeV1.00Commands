@@ -95,6 +95,7 @@ package-%s.conf
 --title-artifacts-dir
 =========================================================================================================
 LUA
+
 apiRequest
 getAXObject
 getEmuObject
@@ -200,6 +201,9 @@ Unhandled LUA function %s
 E:\Em\PeoplesPackageParty\masticore\PSPHD\src\LuaBackCompat\FormerLuaScript.cpp(444): 
 (Lua) ERROR: 
 API version %.1f requested is newer than current API version (%1.f)
+=========================================================================================================
+AXObj Class
+
 GetPC
 SetPC
 GetHi
@@ -256,6 +260,9 @@ Invalid function replacement name %s
 FuncReplace: Function at PC %08x already replaced!
 AOT blocks can only be installed at script load time
 Invalid AOT block name %s
+=========================================================================================================
+EmuObj Class
+
 SetTextureHashMode
 SetTextureScaleOffset
 SetTextureSaveSubdir
@@ -325,6 +332,7 @@ EM_PadSetButtonsMode is deprecated
 Failed to open MIDI file '%s'
 (LuaScript) ERROR: 
 No MIDI track #%d (range: [0-%d])
+=========================================================================================================
 jp
 fr
 es
